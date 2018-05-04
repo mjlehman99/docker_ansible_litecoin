@@ -15,7 +15,7 @@ Need a linux server with Docker CE, ansible, and git.
 
 1.) Clone the repo down.
 
-      `git clone https://github.com/mjlehman99/docker_ansible_litecoin.git`
+      git clone https://github.com/mjlehman99/docker_ansible_litecoin.git
 
 2.) Setup ansible
 
