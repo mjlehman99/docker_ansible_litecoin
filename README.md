@@ -56,19 +56,23 @@ Need a linux server with Docker CE, ansible, and git.
 ##### This was done on Ubuntu 14.04
 
 1.) Patch your server.
+
       `apt-get update
       apt-get dist-upgrade
       reboot`
 
 2.) Install all the packages needed.
+
       `apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev git npm nodejs nodejs-legacy libminiupnpc-dev redis-server`
 
 3.) Added the repo below for the additional packages specific for this coin.
+
       `add-apt-repository ppa:bitcoin/bitcoin
       apt-get update
       apt-get install libdb4.8-dev libdb4.8++-dev`
 
 4.) Get the coin source
+
       `git clone https://github.com/litecoin-project/litecoin.git
       cd litecoin
       sudo ./autogen.sh
@@ -77,5 +81,6 @@ Need a linux server with Docker CE, ansible, and git.
       sudo make install`
 
 5.) Run the Daemon
+
       `cd src
       ./litecoind`
