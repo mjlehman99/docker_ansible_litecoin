@@ -26,22 +26,22 @@ Need a linux server with Docker CE, ansible, and git.
 
 3.) Setup ssh keyless access to the user root.
 
-      `ssh-keygen (Accept the defaults and leave out the passphrase)`
-      `copy the id_rsa.pub to /root/.ssh/authorized_keys`
-      `chmod 700 /root/.ssh && chmod 600 /root/.ssh/authorized_keys`
+      ssh-keygen (Accept the defaults and leave out the passphrase)
+      copy the id_rsa.pub to /root/.ssh/authorized_keys
+      chmod 700 /root/.ssh && chmod 600 /root/.ssh/authorized_keys
 
 4.) Test the ssh keyless connection.
 
-      `ansible litecoins -m ping`
+      ansible litecoins -m ping
 
 5.) Now run the playbook.
 
-      `ansible-playbook litecoins.yml`
+      ansible-playbook litecoins.yml
 
 6.) Check to see if the image built.
 
-      `docker image ls`
+      docker image ls
 
 7.) Check to see if it is up and running.
 
-      `docker ps -a`
+      docker ps -a
