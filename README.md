@@ -6,6 +6,7 @@ The HOWTO Guide for getting a super simple dockerized Litecoin up and running.
 This is configured to do everything "locally". It will still make a ssh connection to localhost.
 
 This is pretty basic as of this writing. Many things can be done make it better.
+(Add EC2 deployment, Monitoring, testing, cleanup of unused docker containers)
 
 Enough talk, lets get some things done here.
 
@@ -37,7 +38,7 @@ Need a linux server with Docker CE, ansible, and git.
 5.) Now run the playbook.
 
       cd /path_to_where_you_cloned_the_repo/
-      ansible-playbook /litecoins.yml
+      ansible-playbook litecoins.yml
 
 6.) Check to see if the image built.
 
