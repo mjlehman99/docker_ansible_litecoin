@@ -4,7 +4,7 @@
   tasks:
   - name: Deploy Docker Container
     copy:
-      src: /home/ubuntu/ansible/files/litecoin/docker_litecoin
+      src: /home/ubuntu/docker_ansible_litecoin/ansible/files/litecoin/docker_litecoin
       dest: /opt
   - name: Build the docker iamge
     shell: chdir=/opt/docker_litecoin  /usr/bin/docker build -f /opt/docker_litecoin/Dockerfile -t litecoin .
