@@ -38,7 +38,7 @@ Need a linux server with Docker CE, ansible, and git.
 
 5.) Now run the playbook.
 
-      cd /path_to_where_you_cloned_the_repo/
+      cd /path_to_where_you_cloned_the_repo/ansible/playbooks
       ansible-playbook litecoins.yml
 
 6.) Check to see if the image built.
