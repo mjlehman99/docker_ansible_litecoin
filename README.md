@@ -7,11 +7,12 @@ If you want to see the compile process, see the notes at the bottom of the page.
 This is configured to do everything "locally". It will still make a ssh connection to localhost.
 
 This is pretty basic as of this writing. Many things can be done make it better.
-(Add EC2 deployment, compile during the build and deploy process, Monitoring, testing, cleanup of unused docker containers)
+(Add EC2 deployment, compile during the build and deploy process, Monitoring, testing, cleanup of unused docker containers, add some jinja)
 
 Enough talk, lets get some things done here.
 
 Setting up the environment.
+Note: The user ubuntu is assumed in this casNote: The user ubuntu is assumed in this case,e,
 
 Need a linux server with Docker CE, ansible, and git.
 
