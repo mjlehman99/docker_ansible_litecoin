@@ -15,6 +15,7 @@ Setting up the environment.
 Note: The user ubuntu is assumed in this casNote: The user ubuntu is assumed in this case,e,
 
 Need a linux server with Docker CE, ansible, and git.
+- Docker-CE  https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce
 
 1.) Clone the repo down.
 
