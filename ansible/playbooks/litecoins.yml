@@ -6,7 +6,7 @@
     copy:
       src: /home/ubuntu/docker_ansible_litecoin/ansible/files/litecoin/docker_litecoin
       dest: /opt
-  - name: Build the docker iamge
+  - name: Build the docker image
     shell: chdir=/opt/docker_litecoin  /usr/bin/docker build -f /opt/docker_litecoin/Dockerfile -t litecoin .
   - name: Start the docker container
     shell: /usr/bin/docker run -d litecoin
